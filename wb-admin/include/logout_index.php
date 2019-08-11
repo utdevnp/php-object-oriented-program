@@ -1,0 +1,3 @@
+<img style="float:left;margin:5px;" src="graphics/icon-back-user.png"> <a class="valid_email" href="../" target="_blank"><?php echo $_SESSION['valid_email']; ?> </a>
+            	<img style="float:left;margin:5px;" src="graphics/icon-viewsite.png"/> <a class="viewsite" href="../" target="_blank">View Site </a>
+                <img style="float:left;margin:5px;" src="graphics/icon-logout.png"/><a class="logout" href="index.php?folder=user&file=logout.php">Logout</a>

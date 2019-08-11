@@ -1,0 +1,31 @@
+<?php
+	require_once('wb-admin/connect/connect.php');
+	require_once('wb-admin/group/group.php');
+	require_once('wb-admin/content/content.php');
+	require_once('wb-admin/constant/constant.php');
+	require_once('wb-admin/attachment/attachment.php');
+	require_once('wb-admin/validator/validator.php');	
+	require_once('wb-admin/feedback/feedback.php');
+	require_once('wb-admin/image/image.php');
+	require_once('wb-admin/gallery/gallery.php');
+	require_once('wb-admin/video_album/video.php');
+	require_once('wb-admin/video/videos.php');
+	require_once('wb-admin/advertisement/advertisement.php');
+	require_once('wb-admin/advert/advert.php');
+	require_once('wb-admin/middlead/middlead.php');
+	require_once('wb-admin/middleadvert/middleadvert.php');
+	require_once('wb-admin/img/img.php');
+	require_once('wb-admin/link_album/link.php');
+	require_once('wb-admin/links/links.php');
+	require_once('wb-admin/social/social.php');
+	require_once('wb-admin/date_time/number.php');
+	require_once('wb-admin/date_time/nepali_calendar.php');
+	require_once('wb-admin/branch/branch.php');
+	require_once('wb-admin/branches/branches.php');
+	require_once('wb-admin/category/category.php');
+	require_once('wb-admin/itineary/itineary.php');
+	require_once('wb-admin/reviews/review.php');
+	require_once('wb-admin/map/map.php');
+	
+
+?>

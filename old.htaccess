@@ -1,0 +1,9 @@
+RewriteEngine on
+
+#if live:
+#RewriteBase /
+
+#if local:
+RewriteBase /aliancetrek
+RewriteRule ^([A-Za-z0-9-]+)$ index.php?pseudo_name=$1 [L]
+

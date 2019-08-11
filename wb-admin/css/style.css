@@ -1,0 +1,341 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,a,div,ul,li,ol,dl,table,td,th,strong,p,em,b,i,img{ margin: 0; padding:0 ; border: none;}
+
+body{
+	background:#f7f7f7;
+	font-family: 'Roboto', sans-serif;
+	}
+.wrapper{
+        height:auto;
+        width: 98%;
+        margin: 0 auto;
+		background:#f7f7f7;
+		border-radius:4px;
+		border:1px solid #dfdfdf;
+        }
+.admin-header{
+	height:55px;
+	width:100%;
+	background:url(../graphics/menu_bg.jpg) repeat-x;
+	overflow:hidden;
+	}
+	
+.admin-header h2{
+		color:#fff;
+		line-height:42px;
+		text-decoration:none;
+		text-indent:20px;
+		float:left;}
+.admin-header h2 span{
+		font-size:14px;}
+	
+.valid_box{
+	height:20px;
+	width:67%;
+	background:green;
+	float:right;
+	color:#ffffff;
+	font-weight:bold;
+	text-indent:30px;
+	}
+.bt_green{
+	padding:2px;
+	color:red;
+	}
+.admin-logo{
+	height:auto;
+	width:auto;
+	float:left;
+	}
+
+	
+.admin-right{
+	height:auto;
+	width:99%;
+	float:right;
+	margin:5px;
+	background:#f4f4f4;
+	border-radius:4px;
+	border:1px solid #dedede;
+	}
+	
+.clear{
+	clear:left;}
+.admin-footer{
+	height:auto;
+	width:100%;
+	background:green;
+	}
+	
+.admin-footer p{
+	color:#ffffff;
+	line-height:35px;
+	text-indent:20px;}
+.admin-footer a{
+	color:#ffffff;
+	text-decoration:none;}
+.main_menu{
+	height:20px;
+	width:auto;
+	float:right;
+	background:green;
+	border-radius:3px;
+	margin-right:5px;}
+.admin-title{
+	float:right;
+	width:auto;}
+.edit{
+	float:left; margin-top:7px;
+	font-size:12px;}
+.edit:hover{
+	text-decoration:underline;}
+	
+.dataTables_filter input{
+	width:300px;
+	padding:2px;
+	border-radius:5px;
+	}
+.submit_bitton{
+	display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+    color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  cursor:pointer;
+  }
+.submit_bitton:hover{
+
+ background-color: #4ea24e;
+
+}
+	
+	
+.admin_icon{
+		height:auto;
+		width:51%;
+		margin:5px;
+		float:left;
+		border-radius:5px;}
+		
+.icon{
+		height:124px;
+		width:123px;
+		margin-top:10px;
+		margin-left:7px;
+		border:1px solid #a4a3a3;
+		float:left;
+		border-radius:5px;
+		background:#fff;
+		margin-right:20px;}
+.icon img{
+		margin:auto;}
+		
+.under_title{
+		text-align:center;}
+		
+.list_shortcut{
+		height:auto;
+		width:46%;
+		float:right;
+		margin:5px;
+		background:#fff;
+		border:1px solid #999;
+		border-radius:5px;
+		overflow:hidden;}
+		
+.Latest_title{
+		height:20px;
+		width:100%;
+		border:1px solid #999;
+		background:#dedede;}
+		
+.Latest_title h4{
+		color:#000;
+		font-weight:bold;
+		text-indent:10px;
+		line-height:20px;
+		}
+		
+.Latest_descripton{
+		height:auto;
+		width:100%;
+		padding-bottom:5px;
+		background:#fff;
+		}
+.Latest_descripton ul{
+		margin-left:20px;}
+		
+.Latest_descripton ul li{
+		margin:8px;
+		list-style-image:url(graphics/list_icon.png);}
+		
+.Latest_descripton ul li a{
+		padding:5px;
+		text-decoration:none;
+		}
+		
+.Latest_descripton ul li a:hover{
+	text-decoration:underline;
+	margin-left:10px;}
+	
+.information{
+		height:auto;
+		overflow:hidden;
+		border:1px solid #999;
+		padding:5px;
+		border-radius:5px;
+		margin:5px;}
+		
+.admin_nav{
+		height:30px;
+		width:100%;
+		border:1px solid #dedede;}
+		
+/* Menu Css               */
+
+/* remove the list style */
+	#nav {
+		margin:0; 
+		padding:0; 
+		list-style:none;
+	}	
+	
+		/* make the LI display inline */
+		/* it's position relative so that position absolute */
+		/* can be used in submenu */
+		#nav li {
+			float:left; 
+			display:block; 
+			width:auto; 
+			background:#ccc; 
+			position:relative;
+			z-index:500; 
+			margin:0 1px;
+		}
+		
+		/* this is the parent menu */
+		#nav li a {
+			display:block; 
+			padding:8px 5px 0 5px; 
+			font-weight:700;  
+			height:23px; 
+			text-decoration:none; 
+			color:#fff; 
+			font-size:11px;
+			text-align:center; 
+			color:#333;
+		}
+
+		#nav li a:hover {
+			color:#fff;
+		}
+	
+		/* you can make a different style for default selected value */
+		#nav a.selected {
+			color:#f00;
+		}
+	
+		/* submenu, it's hidden by default */
+		#nav ul {
+			position:absolute; 
+			left:0; 
+			display:none; 
+			margin:0 0 0 -1px; 
+			padding:0; 
+			list-style:none;
+		}
+		
+		#nav ul li {
+			width:200px; 
+			float:left; 
+			border-top:1px solid #fff;
+		}
+		
+		/* display block will make the link fill the whole area of LI */
+		#nav ul a {
+			display:block;  
+			height:15px;
+			padding: 8px 5px; 
+			color:#666;
+			text-align:left;
+		}
+		
+		#nav ul a:hover {
+			text-decoration:underline;	
+		}
+
+		/* fix ie6 small issue */
+		/* we should always avoid using hack like this */
+		/* should put it into separate file : ) */
+		*html #nav ul {
+			margin:0 0 0 -2px;
+		}
+
+
+
+.view_logout{
+		height:auto;
+		width:auto;
+		float:right;
+		}
+		
+.viewsite{
+	text-decoration:none;
+	float:left;
+	margin:5px;
+		}
+		
+.logout{
+	text-decoration:none;
+	margin:5px;
+	float:left;}
+.view_logout a:hover{
+		text-decoration:underline;}
+		
+.valid_email{
+		text-transform:uppercase;
+		text-decoration:none;
+		margin:5px;
+		float:left;}
+	
+.support{
+	padding:20px;
+	float:left;}
+.support1{
+	padding:20px;
+	float:left;
+	margin-left:20px;}
+	
+.left_side{
+	width:60%;
+	float:left;
+	height:auto;}
+	
+.right_side{
+	width:40%;
+	float:right;
+	height:auto;
+	font-size:14px;}

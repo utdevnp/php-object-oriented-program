@@ -1,0 +1,491 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset="UTF-8" />
+<title> Allience Trek</title>
+
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<link rel="stylesheet" type="text/css" href="css/tabstyle.css" />
+
+<link href="css/js-image-slider.css" rel="stylesheet" type="text/css" />
+<script src="js/js-image-slider.js" type="text/javascript"> </script>
+
+ 
+<link rel="stylesheet" href="css/jssor-slider.css" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jssor.js"></script>
+<script type="text/javascript" src="js/jssor.slider.js"></script>
+    
+<script>
+        jQuery(document).ready(function ($) {
+            var options = {
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlaySteps: 4,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+                $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideDuration: 160,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                $SlideWidth: 200,                                   //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 150,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 3, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 4,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 0,                              //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 0,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 0,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 0,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                },
+
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 2,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 4                                       //[Optional] Steps to go for each navigation request, default value is 1
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var bodyWidth = document.body.clientWidth;
+                if (bodyWidth)
+                    jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 1260));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+	
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script>
+	var sliderOptions =
+{
+    sliderId: "slider",
+    startSlide: 0,
+    effect: "series1",
+    effectRandom: false,
+    pauseTime: 2800,
+    transitionTime: 1200,
+    slices: 14,
+    boxes: 8,
+    hoverPause: 1,
+    autoAdvance: true,
+    captionOpacity: 0.4,
+    captionEffect: "fade",
+    thumbnailsWrapperId: "thumb_container_id",
+    m: false,
+    license: "mylicense"
+}; </script>
+
+
+
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="header">
+	
+	<div class="banner">
+	
+	<div class="headerleft"> <img src="images/banner_logo.png"  alt="" title="" /></div>
+	<div class="headerright">
+		<ul>
+			<li> <a href="#" alt="" title=""> Home </a> </li>
+			<li> <a href="#" alt="" title=""> FAQs </a> </li>
+			<li> <a href="#" alt="" title="">Link Exchange</a> </li>
+			<li> <a href="#" alt="" title="">Feedback </a> </li>
+			<li> <a href="#" alt="" title="">Sitemap </a> </li>
+			<li> <a href="#" alt="" title="">Contact </a> </li>
+			</ul> </br>
+		<p> 24/7 Support: +977 - 9851022814 </p>	</br>
+		<h4>  Live Support:</h4>
+		<a href="#" alt="" title=""><img src="images/icons/facebook.jpg"  alt="" title="" /> </a>
+		 <a href="#" alt="" title="">  <img src="images/icons/googleplus.png"  alt="" title="" /> </a> 
+		<a href="#" alt="" title=""><img src="images/icons/gtalk.jpg"  alt="" title="" /></a>
+		  <a href="#" alt="" title="">   <img src="images/icons/linkedin_logo.png" alt="" title=""/>   </a>
+		<a href="#" alt="" title=""> <img src="images/icons/nsn.jpg"  alt="" title="" /> </a>
+		<a href="#" alt="" title="">  <img src="images/icons/skype.jpg"  alt="" title=""/> </a>
+		 <a href="#" alt="" title="">  <img src="images/icons/yahoo.jpg"  alt="" title="" /> </a>
+		 <a href="#" alt="" title="">   <img src="images/icons/twitter.jpg"  alt="" title=""/>   </a>
+		
+		
+		
+		
+	 </div>
+		
+		</div>
+		<div class="clear"> </div>
+		
+		<div class="nav">
+		<div id='cssmenu'>
+			<ul>
+				<li class='active '><a href='index.php' title="" alt=""><span>Home</span></a></li>
+				<li  class='has-sub'><a href='#'><span> About Us</span></a>
+					<ul>
+						<li class='has-sub '><a href='#' alt="" title=""><span>About Us</span></a>
+						<li class='has-sub '><a href='#' alt="" title=""><span>Legal Documents</span></a>
+						<li class='has-sub '><a href='#' alt="" title=""><span>Our Team </span></a>
+						<li class='has-sub '><a href='#' alt="" title=""><span>Payment Terms & Conditions </span></a>
+						<li class='has-sub '><a href="#" alt="" title="">Volunteering Opportunities </a></li>
+						<li class='has-sub '><a href="#" alt="" title="">Alert </a></li>
+							
+						
+					</ul>
+			     </li>
+				 
+				 <li class='has-sub '> <a href='#' alt="" title=""><span>Nepal Trekking</span></a>
+					<ul>
+						<li class='has-sub '><a href='#' alt="" title=""><span>Ruby Valley Trekking</span></a>
+							<ul>
+								 <li class="has-sub"><a href="" alt="" title=""> Cultural Trek</a>
+									<ul>
+									 <li class="has-sub"><a href="" alt="" title=""> 1 </a></li>
+								     <li class="has-sub"><a href="" alt="" title=""> 2 </a></li>
+								     <li class="has-sub"><a href="" alt="" title=""> 3 </a></li>
+								     <li class="has-sub"><a href="" alt="" title=""> 4 </a></li>
+								     <li class="has-sub"><a href="" alt="" title=""> 5 </a></li>
+								     <li class="has-sub"><a href="" alt="" title=""> 6 </a></li>
+								     <li class="has-sub"><a href="" alt="" title=""> 7 </a></li>
+									</ul>
+								 </li>
+								  <li class="has-sub"><a href="">Classic Himalayan Adventure</a>
+									<ul>
+									<li class='has-sub '><a href='#' alt="" title=""><span>1</span></a></li>
+									<li class="has-sub"><a href="" alt="" title=""> 2 </a></li>
+								     <li class="has-sub"><a href="" alt="" title=""> 3 </a></li>
+								     <li class="has-sub"><a href="" alt="" title=""> 4 </a></li>
+								     <li class="has-sub"><a href="" alt="" title=""> 5 </a></li>
+								     <li class="has-sub"><a href="" alt="" title=""> 6 </a></li>
+								     <li class="has-sub"><a href="" alt="" title=""> 7 </a></li>
+									
+									</ul>
+								  </li>
+								  </ul> </li>
+								
+						<li class='has-sub '><a href='#'  alt="" title=""><span>Everest Trekking</span></a>
+							<ul>
+								 <li class="has-sub"><a href=""  alt="" title="">1 </a></li>
+								  <li class="has-sub"><a href="" alt="" title="">2 </a></li>
+								 <li class="has-sub"><a href="" alt="" title=""> 3</a></li>
+								  <li class="has-sub"><a href="" alt="" title="">4 </a></li>
+								 <li class="has-sub"><a href="" alt="" title=""> 5</a></li>
+								 <li class="has-sub"><a href="" alt="" title=""> 6</a></li>
+								 <li class="has-sub"><a href="" alt="" title=""> 7</a></li>
+							</ul>
+						</li>
+						<li class='has-sub '><a href='#'  alt="" title=""><span>AnnaPurna Trekking</span></a>
+							<ul>
+								 <li class="has-sub"><a href=""  alt="" title="">1 </a></li>
+								  <li class="has-sub"><a href="">2 </a></li>
+								 <li class="has-sub"><a href=""  alt="" title=""> 3</a></li>
+								  <li class="has-sub"><a href=""  alt="" title="">4 </a></li>
+								 <li class="has-sub"><a href=""  alt="" title=""> 5</a></li>
+								 <li class="has-sub"><a href="" alt="" title=""> 6</a></li>
+								 <li class="has-sub"><a href="" alt="" title=""> 7</a></li> 
+							</ul>
+						</li>
+						<li class='has-sub '><a href='#' alt="" title=""><span>Langtang Trekking</span></a>
+							<ul>
+								 <li class="has-sub"><a href=""  alt="" title="">1 </a></li>
+								  <li class="has-sub"><a href="" alt="" title="">2 </a></li>
+								 <li class="has-sub"><a href="" alt="" title=""> 3</a></li>
+								  <li class="has-sub"><a href="" alt="" title="">4 </a></li> 
+							</ul>
+						</li>
+						
+					
+					</ul>
+			     </li>
+				 
+				 <li><a href="" alt="" title="">Nepal Peak Climbing</a></li>
+				  <li><a href="" alt="" title="">Nepal Expedition </a></li>
+				   <li><a href="" alt="" title="">Day Tour </a></li>
+				    <li><a href="" alt="" title="">Exclusive Tour</a></li>
+					 <li><a href="" alt="" title="">Social Responsibility </a></li>
+					 <li><a href="" alt="" title="">Contact Us</a></li>
+			</ul>
+			
+		</div>
+		</div>
+		
+	</div>
+	
+<div class="clear"> </div>
+
+	<div id="contents">
+	<div class="content1">
+	<div id="sliderFrame">
+        <div id="slider">
+            <img src="images/sliderimg/s1.jpg" alt="Caption for slide 1" title="" />
+            <img src="images/sliderimg/s2.jpeg" alt="Caption for slide 2"  title=""/>
+         	 <img src="images/sliderimg/s4.jpg" alt="Caption for slide 3" title=""/>
+            <img src="images/sliderimg/s3.jpg" alt="Caption for slide 4" title="" />
+            <img src="images/sliderimg/s7.jpg"alt="Caption for slide 5" title="" />
+        </div>
+    </div>
+		
+		</div>
+		<div class="clear"> </div>
+		
+	<div class="content2">
+	<div class="images">
+<a href="" alt="" title="">	<img src="images/nepal.png" alt="" title="" /> </a> <br /> <h2> NEPAL</h2> </div>
+	<div class="images">
+<a href="" alt="" title="">	<img src="images/bhutan.png"  alt="" title="" /> </a> <br /> <h2> BHUTAN</h2> </div>
+	<div class="images">
+<a href="" alt="" title="">	 <img src="images/ind.png"  alt="" title="" /></a>  <br /> <h2> INDIA</h2> </div>
+	 <div class="images">
+<a href="" alt="" title="">	  <img src="images/tibet.png"  alt="" title=""  />  </a>  <br /> <h2> TIBET</h2> </div>
+	</div>
+	
+		<div class="clear"> </div>
+		
+	<div class="content3">
+		<div class="intro">
+		<h2> NAMASTE AND HEARTLY WELCOME TO NEPAL</h2>
+		 <p> <img src="images/nepal.jpg" align="right" alt="" title=""  />Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,<br /> and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum </p>
+		  <p align="right"> <a href="#" alt=""s>  View More...  </a> </p> </div>
+		
+		<div class="search"> 
+						<div class="searchform">
+			<h1> Trip Search: <img src="images/icons/search_arrow.png" alt="" title=""> </h1>
+			<form method="">
+						<select>
+						<option value=""> All Country</option>
+						  <option value="nepal">Nepal </option>
+						  <option value="tibet"> Tibet</option>
+						  <option value="bhutan"> Bhutan</option>
+						  <option value="india"> India</option>
+						</select> <br /> <br />
+						<select>
+						<option value=""> All Services</option>
+					
+						</select> <br /> <br />
+						<select>
+						<option value=""> All Areas</option>
+						 
+						</select>  <br /> <br />
+						<select>
+						<option value=""> All days</option>
+						 
+						</select> <br /> <br />
+						
+						<input type="submit" value="Search"  /> </form> </div>
+		</div>
+		</div>
+	
+	<div class="clear"> </div>
+	
+	<div class="content4"> 
+	<h2> Our Best seller</h2> <h4> <a href="#" alt=""> View all </a> </h4>
+		
+		<div class="service">
+		<img src="images/rafting.jpg" alt="" title="" />
+		<h3> <a href="#" alt="" title="">  Trisuhli Rafting </a></h3> 
+		<p> Duration: 1 to 3days </p>
+		</div>
+		
+		<div class="service">
+		<img src="images/kathmandu.jpg" alt="" title=""  />
+		<h3> <a href="#" alt=""title=""> Kathmandu Valley Trek</a> </h3> 
+		<p> Duration: 4days </p>
+		</div>
+		
+		<div class="service">
+		<img src="images/everest.jpg" alt="" title="" />
+		<h3> <a href="#" alt=""title=""> Everset View Trek</a> </h3> 
+		<p> Duration: 10 days</p>
+		</div>
+		
+		<div class="service">
+		<img src="images/rafting.jpg" alt="" title="" />
+		<h3><a href="#" alt=""title="">  Trishuli Rafting </a></h3>
+		<p> Duration: 1 to 3days </p>
+		</div>
+		
+		<div class="service">
+		<img src="images/kathmandu.jpg" alt="" title=""  />
+		<h3> <a href="#" alt=""title=""> Kathmandu Valley Trek </a> </h3> 
+		<p> Duration: 4days </p>
+		</div>
+		
+		<div class="service">
+		<img src="images/everest.jpg" alt="" title="" />
+		<h3><a href="#" alt=""title="">  Everset View Trek  </a></h3>
+		<p> Duration: 10 days</p> 
+		</div>
+		
+		
+		
+		
+	</div> 
+	
+	<div class="clear"> </div>
+	
+	<div class="content5">
+	
+		<div class="video">
+		<h2>Video  </h2>  <h4> <a href="#" alt="" title=""> View all </a> </h4>
+		<iframe width="98.5%" height="315" style="padding:5px;" src="https://www.youtube.com/embed/KpraoWWzNBY" frameborder="0" allowfullscreen></iframe>
+		
+		</div>
+		
+		<div class="testimonial">
+		<h2> Testimonial</h2>  <h4> <a href="#" alt="" title=""> View all </a> </h4>
+			<div class="text">
+			<h3>Lorem Ipsum is simply dummy text </h3>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+			</div>
+			
+			<div class="image">
+			<img src="images/pp.jpg" title="" alt=""/>
+			
+			</div>
+		
+		</div>
+	</div>
+	
+	<div class="clear"> </div>
+	
+	<div class="content6"> 
+	<h2> Latest Travel in Nepal </h2>
+	
+	<div id="slider1_container">
+        <!-- Slides Container -->
+		
+        <div data-u="slides" class="slides" >
+            <div><img data-u="image" src="images/galleryslider/g1.jpeg" title="" alt="" /></div>
+            <div><img data-u="image" src="images/galleryslider/g2.jpg" title="" alt="" /></div>
+            <div><img data-u="image" src="images/galleryslider/g3.jpg" title="" alt=""/></div>
+            <div><img data-u="image" src="images/galleryslider/g6.jpg" title="" alt=""/></div>
+            <div><img data-u="image" src="images/galleryslider/g4.jpg" title="" alt=""/></div>
+            <div><img data-u="image" src="images/galleryslider/g5.jpg" title="" alt=""/></div>
+            <div><img data-u="image" src="images/galleryslider/g7.jpg" title="" alt=""/></div>
+            <div><img data-u="image" src="images/galleryslider/g8.jpg" title="" alt=""/></div>
+			
+			 <div><img data-u="image" src="images/galleryslider/g9.jpg" title="" alt=""/></div>
+            <div><img data-u="image" src="images/galleryslider/g10.jpg" title="" alt=""/></div>
+            <div><img data-u="image" src="images/galleryslider/g11.jpg" title="" alt=""/></div>
+            <div><img data-u="image" src="images/galleryslider/g12.jpg" title="" alt=""/></div>
+            <div><img data-u="image" src="images/galleryslider/g13.jpg" title="" alt=""/></div>
+            <div><img data-u="image" src="images/galleryslider/g14.jpg" title="" alt=""/></div>
+            <div><img data-u="image" src="images/galleryslider/g15.jpg" title="" alt=""/></div>
+            <div><img data-u="image" src="images/galleryslider/g16.jpg" title="" alt="" /></div>
+			
+			
+			
+			
+            </div>
+        
+    
+        <div u="navigator" class="jssorb03" >
+            <!-- bullet navigator item prototype -->
+            <div u="prototype"><div u="numbertemplate"></div></div>
+        </div>
+        <!-- bullet navigator container -->
+      
+        <span u="arrowleft" class="jssora03l">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora03r" >
+        </span>
+    
+    </div>
+
+</div> 
+
+	
+	<div class="clear">
+	 </div>
+	
+</div>
+	
+
+
+<div class="clear"> </div>
+
+	<div id="footer">
+		<div class="contactinfo"> 
+		<p> We are Affilated with:</p>
+		<a href="http://www.tourism.gov.np" alt=""> <img src="images/icons/nepal-logo.png" alt="" title="" /> </a>
+		<a href="http://welcomenepal.com/promotional" alt=""> <img src="images/icons/ntb.jpg" alt="" title="" /> </a> 
+		<a href="http://www.nepalmountaineering.org" alt=""> <img src="images/icons/nma1.png" alt="" title="" /> </a>
+		<a href="http://www.taan.org.np" alt=""> <img src="images/icons/logo-taan.jpg" alt="" title="" /> </a>
+		<a href="http://www.natta.org.np" alt=""> <img src="images/icons/Nata1.png" alt="" title="" /> </a>
+		<a href="http://www.gototrek.com" alt=""> <img src="images/icons/goto.png" alt="" title="" /> </a>
+		
+		
+		
+		<h1> ALLIANCE TREKS & EXPEDITION (P) LTD. </h1>
+		<p>P.O. Box: 5270, Chhetrapati, J. P. School Road, Thamel, Kathmandu, Nepal <br />
+			Tel: 977-1- 4226667, 4220317, 4220130 Fax: 977-1-4231516 <br />
+			E-Mail: info@gototrek.com <br />
+			Web: http://www.gototrek.com , http://www.alliancetrek.com </p>
+			
+		<h3>We Accept: </h3>
+		 <img src="images/icons/paypal.png" alt="" title="" />
+		 <img src="images/icons/mastercard.png" alt="" title="" />
+		 <img src="images/icons/visa.png" alt="" title="" />
+		 <img src="images/icons/wu.png" alt="" title="" />
+		 
+ 	<h5> &copy; Copyright 2013-2015. Alliance Treks & Expedition Pvt Ltd. All Right Reserved. </h5>
+		</div>
+		<div class="fnav">
+		<p> Navigation <p>
+		<ul>
+			<li> <a href="#" alt="" title=""> Home </a> </li>
+			<li> <a href="#" alt="" title=""> About Us </a> </li>
+			<li> <a href="#" alt="" title="">Nepal Trekking </a> </li>
+			<li> <a href="#" alt="" title="">Nepal Peak Climbing </a> </li>
+			<li> <a href="#" alt="" title=""> Nepal Expidition </a> </li>
+			<li> <a href="#" alt="" title=""> Day Tour</a> </li>
+			<li> <a href="#" alt="" title=""> Exclusive Tour</a> </li>
+			<li> <a href="#" alt="" title=""> Blog </a> </li>
+			<li> <a href="#" alt="" title=""> Inquiry </a> </li>
+			<li> <a href="#" alt="" title=""> Contact Us </a> </li>
+			</ul>
+		
+		 </div>
+		<div class="fb">
+		<div class="fb-page" data-href="https://www.facebook.com/alliancetreks" data-width="200" data-height="260" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/alliancetreks"><a href="https://www.facebook.com/alliancetreks">Alliance Treks &amp; Expedition Pvt. Ltd.</a></blockquote></div></div>
+		
+		 </div>
+		<div class="map">
+		<h4>Current Location: </h4>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.165271366031!2d85.310549!3d27.71218300000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18fc37acf94f%3A0x6965c7174f5b6310!2sAlliance+Treks+%26+Expedition+(P).+Ltd!5e0!3m2!1sen!2snp!4v1434360171900" width="250" height="258" frameborder="0" style="border:0"></iframe>
+		<h5> Powered by:<a href="http://www.webbanknepal.com" alt="" title=""> Webbank Nepal</a></h5>
+		 </div>
+	</div>
+	
+</div>
+</body>
+</html>

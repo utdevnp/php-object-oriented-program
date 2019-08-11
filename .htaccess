@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteRule ^home$  index.php [L]
+
+RewriteRule ^package-([^-]*)$ index.php?pages=category.php&cat_url=$1  [L]
+RewriteRule ^product-([^-]*)$ index.php?pages=subcategory.php&grp_url=$1  [L]
+RewriteRule ^trip-([^-]*)$ index.php?pages=details.php&pseudo_name=$1  [L]
+
+
+#RewriteRule ^([^-]*)-([^-]*)-([^-]*)$ index.php?folder=$1&file=$2.php&id=$3 [NC,L]
+#RewriteRule ^([^-]*)-([^-]*)-([^-]*)$ index.php?folder=$1&file=$2.php&id=$pseudo_name [NC,L]

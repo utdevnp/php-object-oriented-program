@@ -1,0 +1,62 @@
+/* CSS Document */
+#slider1_container{ position: relative;
+left: 0px; 
+top: -39px;
+width: 100%;
+height:290px;}
+.slider1_container img{
+	border-radius:5px;}
+
+	
+.slides{cursor: move; position: absolute; left: 0px; top: 33px; width: 100%; height: 230px; overflow: hidden;}
+
+
+				
+.filter{ filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                background-color: #000; top: 0px; left: 0px;width:99%;height:100%;}
+       
+.jssorb03 {
+                position: absolute; bottom: 4px; right: 6px; top:6px;
+            }
+ .jssorb03 div, .jssorb03 div:hover, .jssorb03 .av {
+                position: absolute;
+                /* size of bullet elment */
+                width: 21px;
+                height: 21px;
+                text-align: center;
+                line-height: 21px;
+                color: white;
+                font-size: 12px;
+                background: url(../images/b03.png) no-repeat;
+                overflow: hidden;
+                cursor: pointer;
+            }
+.jssorb03 div { background-position: -5px -4px; }
+.jssorb03 div:hover, .jssorb03 .av:hover { background-position: -35px -4px; }
+.jssorb03 .av { background-position: -65px -4px; }
+.jssorb03 .dn, .jssorb03 .dn:hover { background-position: -95px -4px; }
+ 
+ .jssora03l, .jssora03r {
+                display: block;
+                position: absolute;
+                /* size of arrow element */
+                width: 55px;
+                height: 55px;
+                cursor: pointer;
+                background: url(../images/a03.png) no-repeat;
+                overflow: hidden;
+            }
+.jssora03l { background-position: -3px -33px;
+			 top: 123px;
+			 left: 8px; }
+			 
+.jssora03r { background-position: -63px -33px; top: 123px; right: 8px;}
+
+.jssora03l:hover { background-position: -123px -33px; }
+
+.jssora03r:hover { background-position: -183px -33px; }
+
+.jssora03l.jssora03ldn { background-position: -243px -33px; }
+
+.jssora03r.jssora03rdn { background-position: -303px -33px; }
+ 
